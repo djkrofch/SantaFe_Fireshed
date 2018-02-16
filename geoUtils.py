@@ -11,41 +11,40 @@ import gdal, os, osr, warnings
 from numpy.lib.stride_tricks import as_strided
 
 ### Raster funcs
-
-def importRaster(rasterPath, kwargs):
+def importRaster(rasterPath, **kwargs):
     # Open and read in the raster as an array
     raster_ds = gdal.Open(rasterPath)
     rastermap = raster_ds.ReadAsArray()
     
     # Set the default data type to 'float'
-    if 'dtype' not in kwargs
+    if 'dtype' not in kwargs:
         dtype = 'float'
     rastermap = rastermap.astype(dtype)
     
     # If specified, set the no data value to NaN
-    if 'noData' in kwargs
+    if 'noData' in kwargs:
         rastermap[rastermap == noData] = np.nan
     return rastermap
         
-def plotRaster(image, ax=None, args, kwargs):
+def plotRaster(image, ax=None, *args, **kwargs):
 
     # Grab figure axes if none stated
-    if ax == None
+    if ax == None:
          ax = plt.gca()
                    
     # Normalize color scheme
-    if 'norm' not in kwargs
+    if 'norm' not in kwargs:
         vmin = kwargs.pop('vmin', None)
         vmax = kwargs.pop('vmax', None)
-        if vmin is None
+        if vmin is None:
             vmin = np.min(image) # or what ever
-        if vmax is None
+        if vmax is None:
             vmax = np.max(image)
         norm = matplotlib.colors.Normalize(vmin, vmax)
         kwargs['norm'] = norm
 
     #ax.figure.canvas.draw() # if you want to force a re-draw
-    ax.imshow(image, args, kwargs)
+    ax.imshow(image, *args, **kwargs)
     # Setup axes
     ax.spines['left'].set_visible(False)
     ax.spines['bottom'].set_visible(False)
@@ -55,24 +54,22 @@ def plotRaster(image, ax=None, args, kwargs):
     ax.get_xaxis().set_ticks([])
     ax.get_yaxis().set_ticks([])
 	
-	def saveAsGeoTiff(spatialRaster, ndarray, outputFileName, epsg):
-    templatedf = gdal.Open(spatialRaster)
-    template = templatedf.ReadAsArray()
-    driver = gdal.GetDriverByName('GTiff')
-    outputRaster = driver.Create(outputFileName,
-                                 template.shape[1],
-                                 template.shape[0],
-                                 1, gdal.GDT_Int32)
-    
-    srs = osr.SpatialReference()
-    srs.ImportFromEPSG(epsg)
-    dest_wkt = srs.ExportToWkt()
-    
-    outputRaster.SetGeoTransform(templatedf.GetGeoTransform())
-    outputRaster.GetRasterBand(1).WriteArray(ndarray)
-    outputRaster.SetProjection(dest_wkt)
+def saveAsGeoTiff(spatialRaster, ndarray, outputFileName, epsg):
+	templatedf = gdal.Open(spatialRaster)
+	template = templatedf.ReadAsArray()
+	driver = gdal.GetDriverByName('GTiff')
+	outputRaster = driver.Create(outputFileName,
+								 template.shape[1],
+								 template.shape[0],
+								 1, gdal.GDT_Int32)
 
-    outputRaster.FlushCache()
+	srs = osr.SpatialReference()
+	srs.ImportFromEPSG(epsg)
+	dest_wkt = srs.ExportToWkt()
+	outputRaster.SetGeoTransform(templatedf.GetGeoTransform())
+	outputRaster.GetRasterBand(1).WriteArray(ndarray)
+	outputRaster.SetProjection(dest_wkt)
+	outputRaster.FlushCache()   
 	
 ### Vector funcs
 def getShpGeom(shapefile):
