@@ -25,3 +25,17 @@ report that presents the results of these simulations for the study area <p>
 Estimates of the carbon outcomes of vegetation thinning for the upper Rio Grande watershed in New Mexico
 (Sangre de Cristo and Jemez Mountains)<p>
 Both will be delivered to The Nature Conservancy by <i>March 31, 2018.</i>
+
+### Project overview
+Here we develop the geospatial and tabular inputs required to drive the simulations. Generally speaking,
+this is broken up into several core areas: geospatial data prep, ecosystem model parameterization, 
+simulation climate preparation, fire system calibration, and management scenario creation.
+
+<b>Geospatial data prep:</b> The SF_Fireshed_Prep notebook walks through the workflow used to create and format
+the raster products required for LANDIS-II simulations. Portions of these processing steps were conducted in a GIS,
+and portions were conducted in python or R environments. 
+
+<b>Ecosystem model parameterization:</b> The SFF_PnET_Calib notebook walks through the workflow used to parameterize
+the PnET extension in LANDIS-II. Generally speaking, publically available and literature derived species parameters
+were used where available, and model performance was determined relative to in-situ ecosystem carbon flux measurements
+using ameriflux data. 
