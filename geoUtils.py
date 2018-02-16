@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 import random
+import fiona
+from itertools import chain
 import seaborn as sns
 import gdal, os, osr, warnings
 from numpy.lib.stride_tricks import as_strided
