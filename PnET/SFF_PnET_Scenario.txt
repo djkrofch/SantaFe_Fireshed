@@ -1,0 +1,22 @@
+>> Last Edited: Jan-3-2018
+>> Author: Dan K
+
+LandisData  Scenario
+Duration  10
+Species   SFF_LANDIS_speciesparams.txt
+
+Ecoregions      SFF_ecoregions.txt
+EcoregionsMap   SFF_ecoregions.tif
+
+CellLength  100 << meters; 
+
+
+>> Succession Extension         Initialization File
+>> --------------------         -------------------
+   "PnET-Succession"            SFF_PnET_succession.txt
+
+
+>> Other Extensions             Initialization File
+>> ----------------             -------------------
+   "Output-PnET"				PnET_Output.txt
+

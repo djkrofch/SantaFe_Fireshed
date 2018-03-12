@@ -1,0 +1,29 @@
+>> Last Edited: Jan-3-2018
+>> Author: Dan K
+
+LandisData  Ecoregions
+
+>>         Map
+>> Active  Code  Name   Description
+>> ------  ----  -----  -----------
+	  no     0     inactive	"inactive"
+      yes    105   eco105   "Single Cell"
+      yes    106   eco106   "Single Cell"
+      yes    201   eco201   "Single Cell"
+      yes    202   eco202   "Single Cell"
+      yes    203   eco203   "Single Cell"
+      yes    204   eco204   "Single Cell"
+      yes    205   eco205   "Single Cell"
+      yes    206   eco206   "Single Cell"
+      yes    301   eco301   "Single Cell"
+      yes    302   eco302   "Single Cell"
+      yes    303   eco303   "Single Cell"
+      yes    304   eco304   "Single Cell"
+      yes    305   eco305   "Single Cell"
+      yes    306   eco306   "Single Cell"
+      yes    401   eco401   "Single Cell"
+      yes    402   eco402   "Single Cell"
+      yes    403   eco403   "Single Cell"
+      yes    404   eco404   "Single Cell"
+      yes    406   eco406   "Single Cell"
+    

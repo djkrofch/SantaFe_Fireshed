@@ -1,0 +1,22 @@
+>> for Valles Caldera Flux Tower Site
+LandisData  "PnET-Succession"											
+	
+PnET-Succession		Value
+<<-----------------------------
+										
+Timestep  1	
+StartYear	1950														
+SeedingAlgorithm		WardSeedDispersal						
+Latitude	36										
+>>MaxDevLyrAv	6000	
+
+PNEToutputsites 		PnET_Outputsites.txt
+									
+InitialCommunities      SFF_initialcommunities.txt											
+InitialCommunitiesMap   SFF_initialcommunities.tif	
+
+PnETSpeciesParameters	SFF_PnET_speciesparams.txt		
+EcoregionParameters		SFF_ecoregionparams.txt	
+PnETGenericParameters	PnETGenericParameters.txt
+ 											
+ 										

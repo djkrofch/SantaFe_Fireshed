@@ -1,0 +1,24 @@
+>> Last Edited: Jan-3-2018
+>> Author: Dan K
+LandisData  EcoregionParameters
+
+EcoregionParameters	 RootingDepth	SoilType LeakageFrac  PrecLossFrac  SnowSublimFrac  ClimateFileName
+eco105				 150			SLCL		0.05				0			0.15		SFF_ACCESS_HIST_105.txt
+eco106				 150			SNCL		0.05				0			0.15		SFF_ACCESS_HIST_106.txt
+eco201				 100			CLAY		0.05				0			0.15		SFF_ACCESS_HIST_201.txt
+eco202				 150			LOAM		0.05				0			0.15		SFF_ACCESS_HIST_202.txt
+eco203				 170			SACL		0.05				0			0.15		SFF_ACCESS_HIST_203.txt
+eco204				 150			SILO		0.05				0			0.15		SFF_ACCESS_HIST_204.txt
+eco205				 150			SLCL		0.05				0			0.15		SFF_ACCESS_HIST_205.txt
+eco206				 150			SNCL		0.05				0			0.15		SFF_ACCESS_HIST_206.txt
+eco301				 100			CLAY		0.05				0			0.15		SFF_ACCESS_HIST_301.txt
+eco302				 150			LOAM		0.05				0			0.15		SFF_ACCESS_HIST_302.txt
+eco303				 170			SACL		0.05				0			0.15		SFF_ACCESS_HIST_303.txt
+eco304				 150			SILO		0.05				0			0.15		SFF_ACCESS_HIST_304.txt
+eco305				 150			SLCL		0.05				0			0.15		SFF_ACCESS_HIST_305.txt
+eco306				 150			SNCL		0.05				0			0.15		SFF_ACCESS_HIST_306.txt
+eco401				 100			CLAY		0.05				0			0.15		SFF_ACCESS_HIST_401.txt
+eco402				 150			LOAM		0.05				0			0.15		SFF_ACCESS_HIST_402.txt
+eco403				 170			SACL		0.05				0			0.15		SFF_ACCESS_HIST_403.txt
+eco404				 150			SILO		0.05				0			0.15		SFF_ACCESS_HIST_404.txt
+eco406				 150			SLCL		0.05				0			0.15		SFF_ACCESS_HIST_406.txt

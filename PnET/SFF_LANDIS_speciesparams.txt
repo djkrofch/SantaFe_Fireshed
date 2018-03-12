@@ -1,0 +1,20 @@
+>> Last Edited: Jan-3-2018
+>> Author: Dan K
+
+LandisData	Species		 							
+										
+>>         Long   Sexual    Shade   Fire  Seed      Max	    Veget    MinAge     MaxAge    Postfire 
+>> Species evity  Maturity  Tole    Tole  DispEff   SeedDis reprodP  Resprout	Resprout  regen
+pinupond    500     40        3       4     18        50        0        0         0        resprout
+quergamb    120     10        5       4     30        60      0.7        0         0        resprout
+piceenge	600		25		  4		  1		46		  183	  0.5		20		 100		none
+poputrem	200		5		  1		  1		100		  2000	  0.5		 1		 150		resprout
+abielasi 	250		20		  3		  1		30		  100	  0.5		20		 100		none
+abieconc 	450		40		  4		  3		40		  110	    0		 0		   0		none
+pinuedul    1000    25        2       2     1000      2000      0        0         0        none
+junimono    500     20        1       2     200       1500      0        0         0        none
+pseumenz 	750		25		  3		  3		30		  100	    0		 0		   0		none
+juniscop    250     50        3       1     100       1500      0        0         0        none
+pinuflex 	350		25		  2		  3		1000	  2000	    0		 0		   0		none
+picepung	600		20		  3		  1		90		  200	    0		 0		   0		none
+
